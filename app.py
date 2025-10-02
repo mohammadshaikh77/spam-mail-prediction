@@ -100,3 +100,15 @@ def predict_mail(mail_text):
     # prediction = predict_mail(input_mail[0]) # This line calls the function recursively, which is likely not intended and can be removed
     # print(prediction) # This line will print the result inside the function, but we want to return the result
     return 'Ham Mail' if pred[0] == 1 else 'Spam Mail'
+
+user_input = st.text_area("✍️ Enter the email/message here:")
+
+if st.button("🔍 Check Mail"):
+    if user_input.strip() != "":
+        result = predict_mail(user_input)
+        if result == "Spam Mail":
+            st.error("🚨 This looks like a Spam Mail!")
+        else:
+            st.success("✅ This looks like a Ham Mail.")
+    else:
+        st.warning("⚠️ Please enter a message to check.")
