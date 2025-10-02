@@ -1,7 +1,7 @@
 📧 Spam Mail Prediction
 A Machine Learning project that predicts whether an email is Spam or Ham (Not Spam) using Logistic Regression and TF-IDF vectorization. The project is deployed with Streamlit Cloud for easy access.
-🔗 Live Demo: Spam Mail Prediction App
-🔗 GitHub Repository: Spam Mail Prediction Repo
+🔗 Live Demo:https://spam-mail-prediction-db5gleesejdwcfygmyhwp7.streamlit.app
+
 🚀 Features
 Classifies email messages as Spam or Ham
 Built with Logistic Regression for classification
