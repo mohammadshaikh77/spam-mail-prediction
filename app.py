@@ -5,7 +5,7 @@ import numpy as np
 
 # Load the saved model and vectorizer
 model = joblib.load('spam-ham.pkl')
-vectorizer = joblib.load('tfidf.pkl')
+feature_extraction = joblib.load('tfidf.pkl')
 
 # App title
 st.title("📧 Spam Mail Prediction")
